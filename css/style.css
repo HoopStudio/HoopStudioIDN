@@ -863,6 +863,15 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+  /* Mask arah atas, bawah, dan kanan */
+  -webkit-mask-image: 
+    linear-gradient(to top, black 50%, transparent 100%),
+    linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-composite: intersect;
+  mask-image: 
+    linear-gradient(to top, black 50%, transparent 100%),
+    linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-composite: intersect;
   }
   
   .hero-title {
@@ -902,6 +911,18 @@ button {
     background-size: cover;
     background-position: center;
     height: 100vh;
+  /* Mask arah atas, bawah, dan kanan */
+  -webkit-mask-image: 
+    linear-gradient(to top, black 50%, transparent 100%),
+    linear-gradient(to bottom, black 80%, transparent 100%);
+  mask-image: 
+    linear-gradient(to top, black 50%, transparent 100%),
+    linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-composite: intersect;
+    
+  }
+  .align-up {
+    margin-top: -70px; /* sesuaikan dengan kebutuhan */
   }
   
   .section-label {
@@ -916,13 +937,14 @@ button {
   .section-title {
     font-size: 36px;
     font-weight: 800;
+    padding-left: 15px;
     color: #ffffff;
     margin-bottom: 20px;
     text-transform: uppercase;
   }
   
   .underline {
-    width: 100px;
+    width: 500px;
     height: 3px;
     background-color: white;
     margin-bottom: 30px;
@@ -953,10 +975,12 @@ button {
   }
   
   .about-logo {
-    max-width: 100%;
+    width: 100%; /* atau misalnya 500px */
+    max-width: 500px; /* biar nggak dibatasi */
     height: auto;
     filter: drop-shadow(0 0 10px rgba(0,0,0,0.4));
   }
+  
   /* Visi Misi */
   .vision_mission_section {
     background-color: #000;
@@ -973,14 +997,16 @@ button {
   /* Mask arah atas, bawah, dan kanan */
   -webkit-mask-image: 
     linear-gradient(to right, black 60%, transparent 100%),
-    linear-gradient(to top, black 95%, transparent 100%),
-    linear-gradient(to bottom, black 95%, transparent 100%);
+    linear-gradient(to top, black 50%, transparent 100%),
+    linear-gradient(to bottom, black 50%, transparent 100%),
+    linear-gradient(to left, black 50%, transparent 100%);
   -webkit-mask-composite: intersect;
   mask-image: 
     linear-gradient(to right, black 60%, transparent 100%),
     linear-gradient(to top, black 50%, transparent 100%),
-    linear-gradient(to bottom, black 50%, transparent 100%);
-  mask-composite: intersect;
+    linear-gradient(to bottom, black 50%, transparent 100%),
+    linear-gradient(to left, black 50%, transparent 100%);
+    mask-composite: intersect;
   }
   
   
@@ -1015,8 +1041,9 @@ button {
   
   .vm-heading {
     color: orange;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
+    padding-left: 20px;
     margin-bottom: 10px;
   }
   
@@ -1035,5 +1062,106 @@ button {
   .vm-text {
     color: #e0e0e0; /* abu terang untuk kontras, bukan putih murni */
   }
+/* Member */
+.ceo_section {
+    background: url('../images/Background/Background\ Home\ 4.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    padding: 100px 20px;
+    text-align: center;
+    -webkit-mask-image: 
+    linear-gradient(to right, black 60%, transparent 100%),
+    linear-gradient(to top, black 50%, transparent 100%),
+    linear-gradient(to bottom, black 50%, transparent 100%),
+    linear-gradient(to left, black 50%, transparent 100%);
+  -webkit-mask-composite: intersect;
+  mask-image: 
+    linear-gradient(to right, black 100%, transparent 100%),
+    linear-gradient(to top, black 100%, transparent 100%),
+    linear-gradient(to bottom, black 100%, transparent 100%),
+    linear-gradient(to left, black 100%, transparent 100%);
+    mask-composite: intersect;  
+  }
+  
+  .section-label {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  
+  .ceo-photos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .ceo-photos img {
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  }
+  
+  .expand-btn {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .expand-btn:hover {
+    background-color: #e69500;
+  }
+  
+  .ceo-extra-info {
+    margin-top: 20px;
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  .extra-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .staff-button {
+    background: transparent;
+    border: none;
+    color: #ddd;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .staff-button:hover {
+    color: white;
+  }
+  
+  .staff-icon {
+    font-size: 24px;
+    display: block;
+    margin: 5px auto 0;
+    opacity: 0.6;
+  }
+  
   
   
