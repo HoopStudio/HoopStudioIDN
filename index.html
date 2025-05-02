@@ -11,87 +11,113 @@
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-  <div class="header_section">
-    <nav class=" navbar navbar-expand-lg navbar-light ">
-      <div class="logo"><a href="index.html"><img src="images/Logo/Logo HOOP.png" alt="Hoop Studio"></a></div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
-          <li class="nav-item"><a class="nav-link" href="product.html">OUR PRODUCTS</a></li>
-          <li class="nav-item"><a class="nav-link" href="video.html">VIDEO GAMES</a></li>
-          <li class="nav-item"><a class="nav-link" href="remot.html">REMOTE CONTROL</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
-        </ul>
+  <!-- Header -->
+  <div class="header_section transparent-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container d-flex justify-content-between align-items-center w-100">
+        <!-- Logo -->
+        <div class="navbar-brand logo">
+          <a href="index.html">
+            <img src="images/Logo/Logo HOOP.png" alt="Hoop Studio">
+          </a>
+        </div>
+  
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Main</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Our Games</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="video.html">Game Art Portfolio</a></li>
+          </ul>
+        </div>
+  
+        <!-- Language -->
+        <div class="lang-select">
+          <a href="#">ENG ▾</a>
+        </div>
       </div>
     </nav>
   </div>
+  
 
   <!-- Banner -->
-  <div class="banner_section layout_padding">
-    <div class="container">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-md-6">
-              <h1 class="video_text">Welcome to Hoop Studio</h1>
-              <h1 class="controller_text">Unleashing Creativity Through Games</h1>
-              <p class="banner_text">Hoop Studio menghadirkan dunia baru dalam gaming, menggabungkan teknologi mutakhir dan kreativitas tanpa batas untuk menciptakan pengalaman bermain yang tak terlupakan.</p>
-              <div class="shop_bt"><a href="#">Shop Now</a></div>
-            </div>
-            <div class="col-md-6">
-              <div class="image_1"><img src="images/img-1.png" alt="Game Banner"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="banner_section hero-banner layout_padding">
+    <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center">
+      <h1 class="hero-title">WE ARE HOOP STUDIO</h1>
+      <p class="hero-subtitle">MAKING GAME WITH HOOP</p>
+      <a href="https://www.youtube.com/watch?v=IePMuJMEnwo" class="hero-btn">Video Profile</a>
     </div>
   </div>
+  
 
   <!-- About -->
-  <div class="about_section layout_padding">
+  <div class="about_section layout_padding dark-about-section">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="image_2"><img src="images/img-2.png" alt="About Image"></div>
+      <div class="row align-items-center">
+        <!-- Kiri: Teks -->
+        <div class="col-md-6 text-white">
+          <p class="section-label">WHO ARE WE?</p>
+          <h1 class="section-title">WHAT IS HOOP STUDIO</h1>
+          <hr class="underline">
+          <p class="about-desc">
+            Hoop Studio is a creative team primarily focused on game development with a strong portfolio of games, some of which have won national awards.
+          </p>
+          <p class="about-desc">
+            At Hoop Studio, we blend technical expertise with creativity, aiming to bring <span class="highlight">innovative concepts</span> to life across multiple digital platforms.
+          </p>
         </div>
-        <div class="col-md-6">
-          <h1 class="about_text">ABOUT</h1>
-          <p class="lorem_text">Kami adalah tim pengembang game penuh semangat yang berkomitmen untuk mendorong batas kreativitas dan inovasi. Setiap game yang kami ciptakan adalah karya seni yang lahir dari passion.</p>
-          <div class="shop_bt_2"><a href="#">Learn More</a></div>
+  
+        <!-- Kanan: Logo besar -->
+        <div class="col-md-6 text-center">
+          <img src="images/Logo/Logo HOOP.png" alt="Hoop Studio Logo" class="about-logo">
         </div>
       </div>
     </div>
   </div>
+  
+  <!-- Visi Mision Highlight -->
+  <div class="vision_mission_section layout_padding">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Kiri: Background dengan fade -->
+        <div class="col-md-6 position-relative p-0">
+          <div class="vision-fade-bg"></div>
+        </div>
+  
+        <!-- Kanan: Konten -->
+        <div class="col-md-6 p-5 text-white">
+          <p class="section-label">THIS IS OUR</p>
+          <h1 class="section-title no-bg">VISION & MISSION</h1>
+        
+          <div class="vm-content">
+            <div class="vm-line">
+              <div>
+                <h4 class="vm-heading">VISION</h4>
+                <p class="vm-text">
+                  Membuat game dengan harapan, baik dalam apa yang dikandungnya maupun bagaimana mempersembahkannya
+                </p>
+              </div>
+            </div>
+        
+            <div class="vm-line">
 
-  <!-- Product Highlight -->
-  <div class="product_section layout_padding">
-    <div class="container">
-      <div class="product_text">Our <span style="color: #5ca0e9;">Products</span></div>
-      <div class="product_section_2">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="image_2"><img src="images/img-3.png" alt="Skyward Chronicles"></div>
-            <div class="price_text">Price $<span style="color: #3a3a38;">49</span></div>
-            <h1 class="game_text">Skyward Chronicles</h1>
-            <p class="long_text">Masuki dunia langit penuh petualangan dan rahasia. Selamatkan kerajaan terapung dengan kekuatan anginmu.</p>
+              <div>
+                <h4 class="vm-heading">MISSION</h4>
+                <p class="vm-text">
+                  1. Komitmen dalam membuat game yang mampu bersaing di tengah pasar internasional<br>
+                  2. Sepenuh Hati dalam membuat game dengan energi dan pesan yang mampu dikembangkan melalui ekosistem komunitas yang aktif<br>
+                  3. Yakin dalam membuat game yang dapat dibanggakan, oleh Hoop itu sendiri, pemain, hingga Indonesia
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <div class="image_2"><img src="images/img-3.png" alt="Neon Drift"></div>
-            <div class="price_text">Price $<span style="color: #3a3a38;">39</span></div>
-            <h1 class="game_text">Neon Drift</h1>
-            <p class="long_text">Rasakan balapan futuristik di jalanan cyberpunk. Bangun dan modifikasi mobilmu untuk menjadi yang tercepat.</p>
-          </div>
-        </div>
-      </div>
-      <div class="see_main">
-        <div class="see_bt"><a href="#">See More</a></div>
+        </div>        
       </div>
     </div>
   </div>
+  
+  
 
   <!-- Footer -->
   <div class="section_footer">

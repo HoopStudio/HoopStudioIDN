@@ -215,7 +215,7 @@ button {
 }
 
 .layout_padding {
-     padding-top: 90px;
+     padding-top: 300px;
      padding-bottom: 0px;
 }
 
@@ -223,16 +223,17 @@ button {
      padding: 0px;
 }
 
-.logo {
-    width: 18%;
+/* .logo {
+    padding-top: 30px;
+    width: 16%;
     float: left;
-}
+} */
 .navbar {
-    padding: 20px 30px;
+    padding: 20px 300px;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
     font-size: 18px;
 }
 .bg-light {
@@ -241,7 +242,7 @@ button {
     border-top: 45px solid #333a44;
 }
 .navbar-light .navbar-nav .nav-link {
-    color: #24292f;
+    color: #ffffff;
     font-weight: 500;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
@@ -255,7 +256,7 @@ button {
 .banner_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
+    background-image: url(../images/Background/Background\ 1.png);
     height: auto;
     padding-bottom: 200px;
     background-size: cover;
@@ -346,7 +347,6 @@ button {
 .about_section{
     width: 100%;
     float: left;
-    background-color: #f2f7fd;
     height: auto;
     padding-bottom: 90px;
 }
@@ -819,19 +819,221 @@ button {
     margin-top: 0px; 
 }
 
-/* === Transparent Header === */
+/* ===Header === */
 .header_section {
     background-color: rgba(255, 255, 255, 0); /* putih semi-transparan */
-    -webkit-backdrop-filter: blur(10px); /* untuk Safari */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+
+  }
+  .nav-link {
+    color: white !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .nav-link:hover {
+    color: #599ee9 !important;
+  }
+  .logo img {
+    max-height: 50px;
   }
   
-  /* Untuk menghindari konten ketimpa header */
-  body {
-    padding-top: 100px; /* sesuaikan dengan tinggi header */
+  .lang-select a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
   }
+  
+  .lang-select a:hover {
+    color: #599ee9;
+  }
+/* #Banner */
+  .hero-banner {
+    background-image: url('../images/Background/Background\ Home\ 1.png'); /* ganti sesuai backgroundmu */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+  
+  .hero-btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: rgba(255, 165, 0, .25);
+    border: 2px solid orange;
+    color: orange;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: orange;
+    color: black;
+  }
+  /* About */
+  .dark-about-section {
+    background: url('../images/Background/Background\ Home\ 2.png'); /* pakai background gelap kamu */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  .section-label {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .underline {
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  .about-desc {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    position: relative;
+    display: inline-block;
+    color: white;
+  }
+  
+  .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: orange;
+    z-index: -1;
+  }
+  
+  .about-logo {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.4));
+  }
+  /* Visi Misi */
+  .vision_mission_section {
+    background-color: #000;
+    color: white;
+  }
+  .vision-fade-bg {
+    background-image: url('../images/Background/Background\ Home\ 3.png'); /* ganti dengan gambar kamu */
+    background-size: cover;
+    background-position: center left;
+    height: 100vh;
+    min-height: 600px;
+    width: 100vh;
+    position: relative;
+  /* Mask arah atas, bawah, dan kanan */
+  -webkit-mask-image: 
+    linear-gradient(to right, black 60%, transparent 100%),
+    linear-gradient(to top, black 95%, transparent 100%),
+    linear-gradient(to bottom, black 95%, transparent 100%);
+  -webkit-mask-composite: intersect;
+  mask-image: 
+    linear-gradient(to right, black 60%, transparent 100%),
+    linear-gradient(to top, black 50%, transparent 100%),
+    linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-composite: intersect;
+  }
+  
+  
+  .section-label {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  .vm-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    padding-left: 50px; /* cukup untuk beri ruang gambar */
+    background-image: url('../images/Acc/Line\ Vision\ &\ Mission.png'); /* ganti sesuai path gambar */
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto 100%;
+  }
+  
+  
+  
+  .vm-heading {
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .vm-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  .section-title,
+  .section-label,
+  .vm-heading,
+  .vm-text {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* bayangan hitam halus */
+  }
+  
+  .vm-text {
+    color: #e0e0e0; /* abu terang untuk kontras, bukan putih murni */
+  }
+  
   
