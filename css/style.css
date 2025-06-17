@@ -47,6 +47,7 @@ body {
      line-height: 1.80857;
      font-weight: normal;
      overflow-x: hidden;
+     background-color: #000000;
 }
 
 a {
@@ -853,6 +854,21 @@ button {
   .lang-select a:hover {
     color: #599ee9;
   }
+.spliter {
+  position: absolute;
+  bottom: -80px; /* atur seberapa jauh dia nimpa ke bawah */
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none; /* biar gak ganggu klik */
+}
+
+.spliter img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* #Banner */
   .hero-banner {
     background-image: url('../images/Background/Background\ Home\ 1.png'); /* ganti sesuai backgroundmu */
@@ -860,17 +876,18 @@ button {
     background-position: center;
     height: 100vh;
     position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
   /* Mask arah atas, bawah, dan kanan */
   -webkit-mask-image: 
     linear-gradient(to top, black 50%, transparent 100%),
-    linear-gradient(to bottom, black 80%, transparent 100%);
+    linear-gradient(to bottom, black 90%, transparent 100%);
   -webkit-mask-composite: intersect;
   mask-image: 
     linear-gradient(to top, black 50%, transparent 100%),
-    linear-gradient(to bottom, black 80%, transparent 100%);
+    linear-gradient(to bottom, black 75%, transparent 100%);
     mask-composite: intersect;
   }
   
@@ -910,19 +927,24 @@ button {
     background: url('../images/Background/Background\ Home\ 2.png'); /* pakai background gelap kamu */
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 135vh;
+    position: relative;
+    z-index: 1;
   /* Mask arah atas, bawah, dan kanan */
   -webkit-mask-image: 
-    linear-gradient(to top, black 50%, transparent 100%),
-    linear-gradient(to bottom, black 80%, transparent 100%);
+    linear-gradient(to top, black 60%, transparent 100%),
+    linear-gradient(to bottom, black 50%, transparent 100%);
   mask-image: 
-    linear-gradient(to top, black 50%, transparent 100%),
-    linear-gradient(to bottom, black 80%, transparent 100%);
+    linear-gradient(to top, black 75%, transparent 100%),
+    linear-gradient(to bottom, black 75%, transparent 100%);
     mask-composite: intersect;
     
   }
   .align-up {
-    margin-top: -70px; /* sesuaikan dengan kebutuhan */
+  position: relative;
+  z-index: 10;
+  color: white;
+    margin-top: -100px; /* sesuaikan dengan kebutuhan */
   }
   
   .section-label {
@@ -975,6 +997,7 @@ button {
   }
   
   .about-logo {
+    margin-top: -150px;
     width: 100%; /* atau misalnya 500px */
     max-width: 500px; /* biar nggak dibatasi */
     height: auto;
@@ -1003,8 +1026,8 @@ button {
   -webkit-mask-composite: intersect;
   mask-image: 
     linear-gradient(to right, black 60%, transparent 100%),
-    linear-gradient(to top, black 50%, transparent 100%),
-    linear-gradient(to bottom, black 50%, transparent 100%),
+    linear-gradient(to top, black 75%, transparent 100%),
+    linear-gradient(to bottom, black 75%, transparent 100%),
     linear-gradient(to left, black 50%, transparent 100%);
     mask-composite: intersect;
   }
@@ -1067,7 +1090,7 @@ button {
     background: url('../images/Background/Background\ Home\ 4.png') no-repeat center center;
     background-size: cover;
     height: 100vh;
-    padding: 100px 20px;
+    padding: 120px 20px;
     text-align: center;
     -webkit-mask-image: 
     linear-gradient(to right, black 60%, transparent 100%),
@@ -1076,10 +1099,10 @@ button {
     linear-gradient(to left, black 50%, transparent 100%);
   -webkit-mask-composite: intersect;
   mask-image: 
-    linear-gradient(to right, black 100%, transparent 100%),
-    linear-gradient(to top, black 100%, transparent 100%),
-    linear-gradient(to bottom, black 100%, transparent 100%),
-    linear-gradient(to left, black 100%, transparent 100%);
+    /* linear-gradient(to right, black 75%, transparent 100%), */
+    linear-gradient(to top, black 75%, transparent 100%),
+    linear-gradient(to bottom, black 75%, transparent 100%);
+    /* linear-gradient(to left, black 75%, transparent 100%); */
     mask-composite: intersect;  
   }
   
@@ -1087,6 +1110,8 @@ button {
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    position: relative;
+    z-index: 5;
   }
   
   .section-title {
@@ -1103,12 +1128,11 @@ button {
     margin-bottom: 20px;
     z-index: 1;
     position: relative; /* Penting agar z-index berlaku */
-    margin-top: -320px;  /* Naikin elemennya */
+    margin-top: -400px;  /* Naikin elemennya */
   }
   
   .ceo-photos img {
-    max-width: 1000px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 1250px;
   }
   
   
