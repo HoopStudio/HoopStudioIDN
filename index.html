@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <script src="js/PlayVideo.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -27,7 +30,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Main</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">Our Games</a></li>
+            <li class="nav-item"><a class="nav-link" href="OurGame.html">Our Games</a></li>
             <li class="nav-item"><a class="nav-link" href="product.html">Team</a></li>
             <li class="nav-item"><a class="nav-link" href="video.html">Game Art Portfolio</a></li>
           </ul>
@@ -47,14 +50,19 @@
     <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center">
       <h1 class="hero-title">WE ARE HOOP STUDIO</h1>
       <p class="hero-subtitle">MAKING GAME WITH HOOP</p>
-      <a href="https://www.youtube.com/watch?v=IePMuJMEnwo" class="hero-btn">Video Profile</a>
+     <button class="hero-btn" onclick="playVideo(this)" data-video-id="IePMuJMEnwo">Profile Video</button>
     </div>
   </div>
-  
-  <!-- Spliter
-  <div class="spliter">
-    <img src="images/Background/Spliter 1-2.png" alt="Middle Section Image">
-  </div> -->
+ 
+  <!-- Modal Video Popup -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-video-wrapper">
+        <!-- iframe disisipkan lewat JS -->
+      </div>
+    </div>
+  </div>
 
   <!-- About -->
   <div class="about_section layout_padding dark-about-section">
@@ -162,16 +170,16 @@
   <footer class="site-footer">
     <div class="footer-top">
       <nav class="footer-nav">
-        <a href="#">MAIN</a>
-        <a href="#">OUR GAMES</a>
+        <a href="index.html">MAIN</a>
+        <a href="OurGame.html">OUR GAMES</a>
         <a href="#">TEAM</a>
         <a href="#">GAME ART PORTFOLIO</a>
       </nav>
       <div class="footer-social">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-twitch"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/hoopstudioidn"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@HoopStudioIDN"><i class="fab fa-youtube"></i></a>
+        <a href="www.linkedin.com/in/hoop-studio-82a59b350"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
 

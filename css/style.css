@@ -43,7 +43,7 @@ html {
 body {
      color: #666666;
      font-size: 14px;
-     font-family:Poppins;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
      line-height: 1.80857;
      font-weight: normal;
      overflow-x: hidden;
@@ -819,6 +819,68 @@ button {
 .padding_video_0{
     margin-top: 0px; 
 }
+/* Video iframe */
+  .video-thumbnail {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .video-thumbnail img,
+  .video-thumbnail iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* Modal Container */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Modal Box */
+  .modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    background: transparent;
+    padding: 0;
+  }
+
+  /* Close Button */
+  .modal .close {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  /* Video Wrapper */
+  .modal-video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .modal-video-wrapper iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 /* ===Header === */
 .header_section {
@@ -1363,6 +1425,165 @@ button {
     color: #ff9e2c;
   }
 
+  /* Our game */
+    /* === Hero === */
+    .hero {
+      background: url('../images/Background/bg\ our\ games\ 1.png') center/cover no-repeat;
+      padding: 400px 20px 60px;
+      text-align: center;
+      height: 100vh;
+      -webkit-mask-image: 
+      linear-gradient(to right, black 60%, transparent 100%),
+      linear-gradient(to top, black 50%, transparent 100%),
+      linear-gradient(to bottom, black 50%, transparent 100%),
+      linear-gradient(to left, black 50%, transparent 100%);
+    -webkit-mask-composite: intersect;
+    mask-image: 
+      /* linear-gradient(to right, black 75%, transparent 100%), */
+      linear-gradient(to top, black 75%, transparent 100%),
+      linear-gradient(to bottom, black 75%, transparent 100%);
+      /* linear-gradient(to left, black 75%, transparent 100%); */
+      mask-composite: intersect;  
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #ffffff;
+      font-weight: 700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hero p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #ffffff;
+    }
+
+    /* === Featured Game === */
+    .featured-game {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      gap: 40px;
+    }
+    .featured-game img {
+      width: 400px;
+      border-radius: 8px;
+    }
+    .game-info {
+      max-width: 500px;
+    }
+    .game-info p{
+      color: #fff;
+      text-align: justify;
+      font-weight: 300;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    .game-info img{
+      width: 300px;
+      margin-left: -30px;
+    }
+    .game-info .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #ff9e2c;
+      color: #fff;
+      padding: 12px 24px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .game-info .Space-between {
+      display: flex;
+      justify-content: center;
+      gap: 100px; /* Atur jarak antar elemen di dalamnya */
+      flex-wrap: wrap; /* Biar tetap responsif di layar kecil */
+      margin-top: 20px; /* Opsional: kasih jarak dari atas */
+    }
+    /* === Game section === */
+    .game-section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .game-section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .game-section p {
+      font-size: 0.9rem;
+      color: #ffffff;
+      margin-bottom: 40px;
+    }
+
+    .game-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .game-card {
+
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .game-card img {
+      width: 100%;
+      display: block;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .watch-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      margin-left: -20px;
+    }
+    
+    .watch-info span{
+      color: #fff;
+    }
+
+    .btn-orange {
+      background-color: #ff9e2c;
+      color: #ffffff;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+
+    .card-content h4 {
+      margin: 10px 0 8px;
+      font-size: 1.2rem;
+      color: #fff;
+      margin-left: -20px;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #ccc;
+      text-align: justify;
+      margin-left: -20px;
+    }
 
 
-   
+
+      
