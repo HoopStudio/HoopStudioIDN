@@ -1584,6 +1584,288 @@ button {
       margin-left: -20px;
     }
 
+  /* Our Porto */
+      /* === Hero === */
+    .hero-portfolio {
+      background: url('../images/Background/bg\ portfolio\ 1.png') center/cover no-repeat;
+      padding: 400px 20px 60px;
+      text-align: center;
+      height: 100vh;
+      -webkit-mask-image: 
+      linear-gradient(to right, black 60%, transparent 100%),
+      linear-gradient(to top, black 50%, transparent 100%),
+      linear-gradient(to bottom, black 50%, transparent 100%),
+      linear-gradient(to left, black 50%, transparent 100%);
+    -webkit-mask-composite: intersect;
+    mask-image: 
+      /* linear-gradient(to right, black 75%, transparent 100%), */
+      linear-gradient(to top, black 75%, transparent 100%),
+      linear-gradient(to bottom, black 75%, transparent 100%);
+      /* linear-gradient(to left, black 75%, transparent 100%); */
+      mask-composite: intersect;  
+    }
+    .hero-portfolio h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #ffffff;
+      font-weight: 700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hero-portfolio p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #ffffff;
+    }
+    /*  character Showcase */
+    .character-background {
+        width: 100%;
+        background-image: url("../images/Background/3d\ character\ 1.png");
+        background-size: cover;
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-color: #000; /* fallback color */
+        color: #fff;
+        padding: 100px 0;
+        -webkit-mask-image: 
+          linear-gradient(to right, black 60%, transparent 100%),
+          linear-gradient(to top, black 50%, transparent 100%),
+          linear-gradient(to bottom, black 50%, transparent 100%),
+          linear-gradient(to left, black 50%, transparent 100%);
+        -webkit-mask-composite: intersect;
+        mask-image: 
+          /* linear-gradient(to right, black 75%, transparent 100%), */
+          linear-gradient(to top, black 75%, transparent 100%),
+          linear-gradient(to bottom, black 75%, transparent 100%);
+          /* linear-gradient(to left, black 75%, transparent 100%); */
+          mask-composite: intersect;  
+      }
+
+      .character-content {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 500px;
+      }
+
+      .text-side {
+        max-width: 600px;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .text-side h2 {
+        font-size: 4rem;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .text-side p {
+        font-size: 1.11rem;
+        color: #fff;
+        line-height: 1.6;
+      }
+
+    /* Character Grid */
+      .character-gallery {
+        padding: 40px;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+          "itemcharacter1 itemcharacter2 itemcharacter3"
+          "itemcharacter4 itemcharacter4 itemcharacter3";
+        gap: 20px;
+        max-width: 1500px;
+        margin: 0 auto;
+      }
+
+      /* Container grid item */
+      .grid-item {
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #111; /* opsional: biar tidak hitam total */
+      }
+
+      .itemcharacter1 img,
+      .itemcharacter2 img { 
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 16 / 9; /* bikin semua gambar punya rasio sama */
+        object-fit: cover;
+        display: block;
+      }
+
+      .itemcharacter4 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      /* Penempatan area */
+      .itemcharacter1 { grid-area: itemcharacter1; }
+      .itemcharacter2 { grid-area: itemcharacter2; }
+      .itemcharacter3 { grid-area: itemcharacter3; }
+      .itemcharacter4 { grid-area: itemcharacter4; }
+
+ /*  Envirovment Showcase */
+    .Envirovment-background {
+        width: 100%;
+        background-image: url("../images/Background/3d\ environment\ 1.png");
+        background-size: cover;
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-color: #000; /* fallback color */
+        color: #fff;
+        padding: 100px 0;
+        -webkit-mask-image: 
+          linear-gradient(to right, black 60%, transparent 100%),
+          linear-gradient(to top, black 50%, transparent 100%),
+          linear-gradient(to bottom, black 50%, transparent 100%),
+          linear-gradient(to left, black 50%, transparent 100%);
+        -webkit-mask-composite: intersect;
+        mask-image: 
+          /* linear-gradient(to right, black 75%, transparent 100%), */
+          linear-gradient(to top, black 75%, transparent 100%),
+          linear-gradient(to bottom, black 75%, transparent 100%);
+          /* linear-gradient(to left, black 75%, transparent 100%); */
+          mask-composite: intersect;  
+      }
+
+      .Envirovment-content {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 500px;
+      }
+
+      .Envirovment-content .text-side {
+        max-width: 620px;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: justify;
+      }
+    /* Envirovment Grid */
+      .Envirovment-gallery {
+        padding: 40px;
+      }
+
+      .gallery-grid-Envirovment {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+          "itemEnvirovment1 itemEnvirovment2 itemEnvirovment3"
+          "itemEnvirovment4 itemEnvirovment5 itemEnvirovment3";
+        gap: 20px;
+        max-width: 1500px;
+        margin: 0 auto;
+      }
+
+      /* Container grid item */
+
+      .itemEnvirovment1 img { 
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 16 / 9; /* bikin semua gambar punya rasio sama */
+        object-fit: cover;
+        display: block;
+      }
+
+      /* Penempatan area */
+      .itemEnvirovment1 { grid-area: itemEnvirovment1; }
+      .itemEnvirovment2 { grid-area: itemEnvirovment2; }
+      .itemEnvirovment3 { grid-area: itemEnvirovment3; }
+      .itemEnvirovment4 { grid-area: itemEnvirovment4; }
+      .itemEnvirovment5 { grid-area: itemEnvirovment5; }
+
+  /* Our Team */
+      /* === Hero === */
+    .hero-team {
+      background: url('../images/Background/staff\ bg\ 2.png') center/cover no-repeat;
+      padding: 400px 20px 60px;
+      text-align: center;
+      height: 100vh;
+      -webkit-mask-image: 
+      linear-gradient(to right, black 60%, transparent 100%),
+      linear-gradient(to top, black 50%, transparent 100%),
+      linear-gradient(to bottom, black 50%, transparent 100%),
+      linear-gradient(to left, black 50%, transparent 100%);
+    -webkit-mask-composite: intersect;
+    mask-image: 
+      /* linear-gradient(to right, black 75%, transparent 100%), */
+      linear-gradient(to top, black 75%, transparent 100%),
+      linear-gradient(to bottom, black 75%, transparent 100%);
+      /* linear-gradient(to left, black 75%, transparent 100%); */
+      mask-composite: intersect;  
+    }
+    .hero-team h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #ffffff;
+      font-weight: 700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hero-team p {
+      margin-top: 10px;
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+
+    .Member-Area  {
+      background: url('../images/Background/bg\ 1.png') center/cover no-repeat;
+      padding: 300px 0px 0px;
+      text-align: center;
+      height: 250vh;
+      -webkit-mask-image: 
+      linear-gradient(to right, black 60%, transparent 100%),
+      linear-gradient(to top, black 50%, transparent 100%),
+      linear-gradient(to bottom, black 50%, transparent 100%),
+      linear-gradient(to left, black 50%, transparent 100%);
+    -webkit-mask-composite: intersect;
+    mask-image: 
+      /* linear-gradient(to right, black 75%, transparent 100%), */
+      linear-gradient(to top, black 75%, transparent 100%),
+      linear-gradient(to bottom, black 75%, transparent 100%);
+      /* linear-gradient(to left, black 75%, transparent 100%); */
+      mask-composite: intersect;  
+    }
+.container {
+  max-width: 1800px;
+  margin: auto;
+}
+
+.row1,
+.row2 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.member {
+  width: 530px; /* Atur ukuran tetap di sini */
+  text-align: center;
+}
+
+.member img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
 
 
-      
+
+
+
+
+
